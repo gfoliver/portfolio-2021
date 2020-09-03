@@ -5,7 +5,7 @@ import { Container, Card, Grid, GridHeader, Techs, Tech } from './styles';
 
 interface IRepository {
     name: string;
-    url: string;
+    html_url: string;
     topics: string[];
 }
 
@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
                 </GridHeader>
                 <Grid>
                     {filteredRepositories.map(repository => (
-                        <Card href={repository.url} target="_blank" key={repository.name}>
+                        <Card href={repository.html_url} target="_blank" key={repository.name}>
                             <div className="title">{repository.name}</div>
                             <div className="techs">
                                 {repository.topics.map((topic, index) => index === repository.topics.length - 1 ? topic : topic + ', ')}
