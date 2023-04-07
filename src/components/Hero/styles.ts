@@ -57,6 +57,10 @@ export const Container = styled.div`
     }
 
     @media only screen and (max-width: 580px) {
+        min-height: 0;
+        padding-top: 80px;
+        padding-bottom: 80px;
+
         h1 {
             font-size: 48px;
         }
@@ -73,7 +77,7 @@ export const CTA = styled.a`
     display: block;
     padding: 24px 96px;
     border-radius: 16px;
-    background: ${props => props.theme.colors.gradient};
+    background: ${props => props.theme.colors.accents[2]};
     color: ${props => props.theme.colors.white};
     font-weight: bold;
     font-size: 32px;

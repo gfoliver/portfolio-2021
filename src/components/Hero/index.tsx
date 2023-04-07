@@ -11,8 +11,8 @@ const Hero: React.FC = () => {
             <img src={backgroundImg} className="background" alt="" />
             <div className="container">
                 <div className="text">
-                    <h1>Web Developer</h1>
-                    <div className="subtitle">ReactJS, NodeJS, React Native.</div>
+                    <h1>Software Developer</h1>
+                    <div className="subtitle">Backend, Frontend, Mobile.</div>
                     <CTA href="#contact">Contact</CTA>
                 </div>
                 <img src={LaptopImg} alt="laptop"/>

@@ -9,6 +9,7 @@ declare module 'styled-components' {
             white: string,
             blue: string,
             gradient: string,
+            accents: string[]
         }
     }
 }

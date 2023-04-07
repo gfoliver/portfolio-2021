@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     padding: 80px 0;
+    background: ${props => props.theme.colors.backgroundDark};
 
     .container {
         display: grid;
@@ -11,8 +12,12 @@ export const Container = styled.div`
 
         @media only screen and (max-width: 1100px) {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 0;
     }
 `;
 
@@ -63,7 +68,7 @@ export const ContactBlock = styled.a`
     transition: all .3s ease;
 
     &:hover {
-        border-color: ${props => props.theme.colors.blue};
+        border-color: ${props => props.theme.colors.accents[2]};
     }
 
     &:last-child {
@@ -79,6 +84,7 @@ export const ContactBlock = styled.a`
     span {
         display: block;
         font-size: 24px;
+        color: ${props => props.theme.colors.accents[0]};
 
         span {
             display: inline;

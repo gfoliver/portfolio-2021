@@ -11,6 +11,14 @@ const Contact: React.FC = () => {
     return (
         <Container id="contact">
             <div className="container">
+                <Card className="about">
+                    <h3>About Me</h3>
+                    <img src={ProfileImg} alt="Guilherme Fleck Oliveira"/>
+                    <p>
+                        Hello! My name is Guilherme and i’m a Full Stack Developer from 
+                        Porto Alegre, Brasil. I’m currently studying Computer Science at UniRitter.
+                    </p>
+                </Card>
                 <Card>
                     <h3>Contact</h3>
                     <ContactBlock href="https://linkedin.com/in/guilherme-fleck-oliveira" target="_blank" rel="noopener noreferrer">
@@ -25,15 +33,6 @@ const Contact: React.FC = () => {
                         <EmailImg />
                         <span>guilhermefleckoliveira<span>@gmail.com</span></span>
                     </ContactBlock>
-                </Card>
-                <Card className="about">
-                    <h3>About Me</h3>
-                    <img src={ProfileImg} alt="Guilherme Fleck Oliveira"/>
-                    <p>
-                        Hello! My name is Guilherme and i’m a Web Developer from 
-                        Porto Alegre, Brasil. I work as a frontend developer and 
-                        i’m currently studying Computer Science at UniRitter.
-                    </p>
                 </Card>
             </div>
         </Container>

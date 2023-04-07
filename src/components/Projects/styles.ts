@@ -29,6 +29,7 @@ export const GridHeader = styled.div`
 
     @media only screen and (max-width: 580px) {
         display: block;
+        padding-bottom: 32px;
 
         h4 {
             padding-bottom: 0;
@@ -68,15 +69,21 @@ export const Card = styled.a`
     box-shadow: inset 0px -16px 0px rgba(0,0,0,0.12);
     text-align: center;
     padding: 32px;
+    transition: all .3s ease;
 
     .title {
         font-size: 24px;
         margin-bottom: 8px;
+        color: #8AEA92;
     }
 
     .techs {
         color: rgba(255,255,255,0.5);
         font-size: 12px;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
     }
 `;
 
@@ -86,12 +93,23 @@ export const Techs = styled.nav`
     list-style: none;
 
     @media only screen and (max-width: 580px) {
-        justify-content: center;
+        display: none;
     }
+`;
 
-    @media only screen and (max-width: 400px) {
+export const TechSelect = styled.select`
+    display: none;
+
+    @media only screen and (max-width: 580px) {
         display: block;
-        padding-bottom: 32px;
+        width: 100%;
+        padding: 16px;
+        border-radius: 8px;
+        border: none;
+        background: rgba(0,0,0,0.05);
+        color: ${props => props.theme.colors.white};
+        font-size: 16px;
+        margin-top: 16px;
     }
 `;
 
@@ -109,7 +127,7 @@ export const Tech = styled.li<TechProps>`
     }
 
     ${props => props.active && css`
-        border-color: ${props.theme.colors.blue};
+        border-color: ${props.theme.colors.accents[2]};
     `};
 
     @media only screen and (max-width: 580px) {
@@ -133,7 +151,7 @@ export const Tech = styled.li<TechProps>`
        
         ${props => props.active && css`
             border-color: transparent;
-            color: ${props => props.theme.colors.blue};
+            color: ${props => props.theme.colors.accents[2]};
             font-weight: bold;
         `};
     }
