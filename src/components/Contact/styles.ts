@@ -42,6 +42,11 @@ export const Card = styled.div`
         font-size: 20px;
         line-height: 1.5em;
         margin: 0 32px;
+
+        a {
+            color: #ff0050;
+            text-decoration: none;
+        }
     }
 
     @media only screen and (max-width: 768px) {

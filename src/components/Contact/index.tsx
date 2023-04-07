@@ -16,7 +16,8 @@ const Contact: React.FC = () => {
                     <img src={ProfileImg} alt="Guilherme Fleck Oliveira"/>
                     <p>
                         Hello! My name is Guilherme and i’m a Full Stack Developer from 
-                        Porto Alegre, Brasil. I’m currently studying Computer Science at UniRitter.
+                        Porto Alegre, Brasil. I’m currently working full-time at <a href="https://santins.com.br" target="_blank" rel="noopener noreferrer">Santins</a> and 
+                        studying Computer Science at UniRitter.
                     </p>
                 </Card>
                 <Card>
